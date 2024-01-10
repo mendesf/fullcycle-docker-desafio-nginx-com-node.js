@@ -26,6 +26,8 @@ services:
       - nodejs-network
     depends_on:
       - db
+    volumes:
+      - ./nodejs/app/src:/usr/src/app/src
 
   nginx:
     build:
